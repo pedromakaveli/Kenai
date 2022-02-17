@@ -1,4 +1,4 @@
-<h1>Kunai</h1>
+<h1>Kenai</h1>
 <p>Plataforma de streaming ficticia</p>
 
 <br>
