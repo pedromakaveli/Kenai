@@ -1,0 +1,184 @@
+span {
+  font-size: 1.5rem;
+  color: var(--c4);
+  font-weight: 100;
+}
+
+main {
+  text-align: center;
+  max-width: 1200px;
+  display: grid;
+  place-items: center;
+  gap: 50px;
+  margin: 0 auto;
+  padding: 3rem;
+}
+
+.texto-profile h1,
+h2 {
+  font-weight: 200;
+  color: var(--c4);
+}
+
+.texto-profile h1 {
+  font-size: 2.5rem;
+  margin-bottom: 24px;
+}
+
+.profile {
+  background: red;
+  border-radius: 50%;
+  width: 140px;
+  height: 140px;
+  margin-bottom: 12px;
+}
+
+.pic {
+  border: 5px solid #4df0f3;
+  background-image: url("./principal/img/222222.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+
+.pic2 {
+  border: 5px solid #781fd1;
+  background-image: url("./principal/img/isa.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  /*background: linear-gradient(225deg, #781fd1 0%, #570eab 100%)*/
+}
+
+.pic3 {
+  background: linear-gradient(180deg, #4df0f3 0%, #4d7bfd 100%);
+}
+
+.perfis {
+  flex-wrap: wrap;
+  display: flex;
+  gap: 50px;
+  justify-content: center;
+}
+
+.select {
+  display: grid;
+  justify-items: center;
+}
+
+@media (max-width: 1000px) {
+  .texto-profile h1 {
+    font-size: 2.5rem;
+  }
+
+  .texto-profile h2 {
+    font-size: 1.5rem;
+  }
+
+  .perfis {
+    gap: 50px;
+  }
+
+  .profile {
+    width: 120px;
+    height: 120px;
+  }
+
+  span {
+    font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 800px) {
+  .texto-profile h1 {
+    font-size: 2rem;
+  }
+
+  .texto-profile h2 {
+    font-size: 1.2rem;
+  }
+
+  .profile {
+    width: 120px;
+    height: 120px;
+  }
+
+  .perfis {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 70px;
+  }
+
+  span {
+    font-size: 1.3rem;
+  }
+}
+
+@media (max-width: 600px) {
+  main {
+    gap: 75px;
+  }
+
+  .texto-profile h1 {
+    font-size: 1.8rem;
+  }
+
+  .texto-profile h2 {
+    font-size: 1.125rem;
+  }
+
+  .profile {
+    width: 100px;
+    height: 100px;
+  }
+
+  .perfis {
+    gap: 50px;
+  }
+
+  .botao-amarelo {
+    font-size: 1rem;
+  }
+
+  span {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 400px) {
+  main {
+    gap: 50px;
+  }
+
+  .texto-profile h1 {
+    font-size: 1.4rem;
+  }
+
+  .texto-profile h2 {
+    font-size: 1rem;
+  }
+
+  .profile {
+    width: 85px;
+    height: 85px;
+  }
+
+  .perfis {
+    gap: 30px;
+  }
+
+  .botao-amarelo {
+    font-size: 0.9rem;
+  }
+
+  span {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 300px) {
+  .perfis {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}

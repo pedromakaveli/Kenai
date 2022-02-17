@@ -1,0 +1,38 @@
+.cabecalho {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 50px;
+  padding: 40px 45px;
+}
+
+.cabecalho-menu {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 80px;
+  align-items: center;
+}
+
+.cabecalho-menu a {
+  color: #fff;
+}
+
+.user-alert {
+  margin-left: 30px;
+  display: inherit;
+  gap: 25px;
+}
+
+@media (max-width: 800px) {
+  .cabecalho-menu {
+    gap: 20px;
+  }
+}
+
+@media (max-width: 600px) {
+  .cabecalho,
+  .cabecalho-menu {
+    justify-content: center;
+  }
+}
