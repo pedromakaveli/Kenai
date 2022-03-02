@@ -19,13 +19,10 @@
   <li>Css utilitário</li>
 </ul>
 
-# Resultado final
+# Resultado final Desktop
 
-<img src="https://i.imgur.com/UmA1d82.png"/>
-<img src="https://i.imgur.com/YiyHu97.png"/>
-<img src="https://i.imgur.com/i5zrDiv.png"/>
-
+<img src="https://i.imgur.com/tEfBUtF.png"/>
+<img src="https://i.imgur.com/oi9xTZn.png"/>
+<img src="https://i.imgur.com/DOGEO5x.png"/>
 
 <a target="blank" href="http://pedromakaveli.github.io/kunai">Veja no seu navegador</a>
-
-<h2>Idealizado por Iuri Silva</h2>
