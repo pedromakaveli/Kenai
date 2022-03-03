@@ -25,4 +25,4 @@
 <img src="https://i.imgur.com/oi9xTZn.png"/>
 <img src="https://i.imgur.com/DOGEO5x.png"/>
 
-<a target="blank" href="http://pedromakaveli.github.io/kunai">Veja no seu navegador</a>
+<a target="blank" href="http://pedromakaveli.github.io/Kenai">Veja no seu navegador</a>
