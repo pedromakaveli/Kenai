@@ -27,7 +27,7 @@
                         </li>
                         
                         <li>
-                            <a href="#introducao">Ínicio</a>
+                            <a href="../../principal/">Ínicio</a>
                         </li>
                         
                         <li>
