@@ -14,11 +14,14 @@
                     $title = $result['Title'];
                     $year = $result['Year'];
                     $genre = $result['imdbRating'];
+                    $imdb = $result['imdbID'];
 
                     echo "
                     <div class='filme'>
                         <div class='img-poster'>
-                            <img class='poster' src='{$poster}'/>
+                            <a href='https://www.imdb.com/title/{$imdb}'>
+                               <img class='poster' src='{$poster}'/>
+                            </a>
                         </div>
                     </div>
                         ";
