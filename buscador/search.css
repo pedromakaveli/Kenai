@@ -1,0 +1,21 @@
+form input {
+    width: 100%;
+    background: var(--c5);
+    padding: 20px 30px;
+    color: var(--c6);
+    border: none;
+    border-radius: 15px;
+    font-size: 1.5rem;
+}
+
+.warning {
+    background: var(--c5);
+    color: var(--c6);
+    border-radius: 15px;
+    padding: 15px;
+    font-size: 1rem;
+}
+
+.resultado-principal{
+    margin-top: 2rem;
+}

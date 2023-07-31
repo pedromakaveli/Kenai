@@ -4,7 +4,8 @@
   align-items: center;
   justify-content: space-between;
   gap: 50px;
-  padding: 40px 45px;
+  padding: 30px 45px;
+
 }
 
 .cabecalho-menu {
@@ -14,9 +15,15 @@
   align-items: center;
 }
 
-.cabecalho-menu a {
-  color: #fff;
+.cabecalho-menu a{
+  color: var(--c4);
+  transition: 0.2s;
 }
+
+.cabecalho-menu a:hover{
+  font-weight: bold;
+}
+
 
 .user-alert {
   margin-left: 30px;

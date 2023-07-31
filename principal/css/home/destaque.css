@@ -1,10 +1,16 @@
 .bg-img {
   background-image: linear-gradient(rgba(0, 0, 0, 0.452), var(--c8)),
-    url("../../img/filmes-img/matrix.jpg");
+    url("../../img/filmes-img/openheimer.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
   height: 100vh;
+}
+
+.filme-destaque{
+  margin-top: 3.4rem;
+  height: 60vh;
+
 }
 
 .info {

@@ -1,17 +1,27 @@
-.conteudo-principal section {
-  margin-bottom: 10rem;
+
+.filmes-grid{
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 50px 5px;
 }
 
-.filmes-grid {
-  display: grid;
-  grid-template-columns: repeat(10, 1fr);
-  gap: 20px;
-  overflow-x: scroll;
+.info-filme{
+  display: flex;
+  gap: 15px;
+  align-items: baseline;
+}
+
+.poster {
+  object-fit: cover;
+  width: 300px;
+  height: 455px;
+  margin-bottom: 15px;
+  border-radius: 5px;
 }
 
 .populares h2 {
   position: relative;
-  margin-bottom: 50px;
+  margin-bottom: 30px;
 }
 
 .populares h2::after {
@@ -23,44 +33,29 @@
   background: var(--c11);
 }
 
-.cards {
-  box-shadow: 0px 0px 5px rgba(17, 17, 17, 0.664);
-  height: 340px;
-  width: 230px;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-end;
-  padding: 20px;
-  border-radius: 8px;
-  cursor: pointer;
-}
-
-@media (max-width: 800px) {
+@media(max-width: 1200px){
   .filmes-grid {
-    gap: 15px;
-  }
-
-  .cards {
-    height: 300px;
-    width: 150px;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
   }
 }
 
-@media (max-width: 400px) {
-  .filmes-grid {
-    gap: 10px;
-  }
-
-  .cards {
-    height: 250px;
+@media(max-width: 800px) {
+  .poster {
     width: 150px;
+    height: 200px;
   }
 
-  .titulo-3 {
-    font-size: 18px;
+  .filmes-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr) !important;
+  }
+}
+
+@media (max-width: 500px) {
+  .filmes-grid{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr) !important;
   }
 }
 
@@ -68,29 +63,4 @@
   display: flex;
   gap: 5px;
   margin: 15px 0;
-}
-
-.card1 {
-  background-image: linear-gradient(rgba(0, 0, 0, 0), rgb(0, 0, 0)),
-    url("../../img/filmes-img/schi.png");
-}
-
-.card2 {
-  background-image: linear-gradient(rgba(0, 0, 0, 0), rgb(0, 0, 0)),
-    url("../../img/filmes-img/wdragon.png");
-}
-
-.card3 {
-  background-image: linear-gradient(rgba(0, 0, 0, 0), rgb(0, 0, 0)),
-    url("../../img/filmes-img/loki.png");
-}
-
-.card4 {
-  background-image: linear-gradient(rgba(0, 0, 0, 0), rgb(0, 0, 0)),
-    url("../../img/filmes-img/spider.png");
-}
-
-.card5 {
-  background-image: linear-gradient(rgba(0, 0, 0, 0), rgb(0, 0, 0)),
-    url("../../img/filmes-img/witcher.png");
 }
