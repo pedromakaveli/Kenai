@@ -7,6 +7,11 @@
   height: 100vh;
 }
 
+.filme-destaque {
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+}
+
 .info {
   display: flex;
   flex-wrap: wrap;
