@@ -13,8 +13,10 @@
     <title>Kenai</title>
 </head>
 <body>
-        <header class="cabecalho">
-            <img src="../principal/img/Kenai-rodape.svg" alt="Kenai">
+        <header class="cabecalho container">
+            <a href="../../principal/">
+                <img src="../principal/img/Kenai-rodape.svg" alt="Kenai">
+            </a>
     
                 <nav aria-label="Primária">
                     <ul class="cabecalho-menu">
@@ -25,7 +27,7 @@
                         </li>
                         
                         <li>
-                            <a href="#introducao">Ínicio</a>
+                            <a href="../../principal/">Ínicio</a>
                         </li>
                         
                         <li>

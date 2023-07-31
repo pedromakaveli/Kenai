@@ -2,23 +2,39 @@
     session_start();
     
     function show_movie($movie){
-        $url = "http://www.omdbapi.com/?s={$movie}&apikey=be7603a2";
+        $url = "https://www.omdbapi.com/?s={$movie}&apikey=be7603a2";
         $response = file_get_contents($url);
 
         if($response !== false){
             $data = json_decode($response, true);
 
+            if($data === null) {
+                echo "
+                <div style='padding: 2rem'>
+                    <div style='background: #d63c3e; color: #f9f9f9; font-size: 1rem; border-radius: 15px; padding: 15px 30px'>
+                        <p>Falha ao contatar API :(</p>
+                    </div>
+                </div>";
+                return;
+            }
+
             if(isset($data['Search'])){
                 foreach($data['Search'] as $result){
                     $poster = $result['Poster'];
+                    if ($poster === 'N/A') {
+                        $poster = '../../principal/img/placeholder.png';
+                    }
                     $title = $result['Title'];
                     $year = $result['Year'];
                     $genre = $result['imdbRating'];
+                    $imdb = $result['imdbID'];
 
                     echo "
-                    <div class='filme'>
+                    <div title='{$title}' class='filme'>
                         <div class='img-poster'>
-                            <img class='poster' src='{$poster}'/>
+                            <a href='https://www.imdb.com/title/{$imdb}'>
+                               <img class='poster' src='{$poster}'/>
+                            </a>
                         </div>
                     </div>
                         ";
@@ -36,7 +52,12 @@
         }
 
         else{
-            echo 'Falha ao fazer a requisição';
+            echo "
+            <div style='padding: 2rem'>
+                <div style='background: #d63c3e; color: #f9f9f9; font-size: 1rem; border-radius: 15px; padding: 15px 30px'>
+                    <p>Falha ao fazer requisição :(</p>
+                </div>
+            </div>";
         }
     }
 
@@ -45,7 +66,7 @@
         // Obtém o valor da variável de busca
         $search = $_SESSION['Search'];
 
-        echo show_movie($search);
+        show_movie($search);
 
         // Limpa a variável da sessão para não interferir futuramente
         unset($_SESSION['Search']);

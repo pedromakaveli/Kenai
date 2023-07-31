@@ -50,6 +50,10 @@
     display: grid;
     grid-template-columns: repeat(4, 1fr) !important;
   }
+
+  .estrelas-catalogo {
+    display: none !important;
+  }
 }
 
 @media (max-width: 500px) {

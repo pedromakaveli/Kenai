@@ -7,10 +7,9 @@
   height: 100vh;
 }
 
-.filme-destaque{
-  margin-top: 3.4rem;
-  height: 60vh;
-
+.filme-destaque {
+  margin-top: 3rem;
+  margin-bottom: 3rem;
 }
 
 .info {
