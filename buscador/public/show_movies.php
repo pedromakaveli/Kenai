@@ -49,7 +49,12 @@
         }
 
         else{
-            echo 'Falha ao fazer a requisição';
+            echo "
+            <div style='padding: 2rem'>
+                <div style='background: #d63c3e; color: #f9f9f9; font-size: 1rem; border-radius: 15px; padding: 15px 30px'>
+                    <p>Falha ao fazer requisição :(</p>
+                </div>
+            </div>";
         }
     }
 
