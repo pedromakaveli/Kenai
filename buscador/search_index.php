@@ -14,7 +14,9 @@
 </head>
 <body>
         <header class="cabecalho">
-            <img src="../principal/img/Kenai-rodape.svg" alt="Kenai">
+            <a href="../../principal/">
+                <img src="../principal/img/Kenai-rodape.svg" alt="Kenai">
+            </a>
     
                 <nav aria-label="Primária">
                     <ul class="cabecalho-menu">
