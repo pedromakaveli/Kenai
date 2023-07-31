@@ -21,6 +21,9 @@
             if(isset($data['Search'])){
                 foreach($data['Search'] as $result){
                     $poster = $result['Poster'];
+                    if ($poster === 'N/A') {
+                        $poster = '../../principal/img/placeholder.png';
+                    }
                     $title = $result['Title'];
                     $year = $result['Year'];
                     $genre = $result['imdbRating'];
