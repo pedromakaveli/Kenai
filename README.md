@@ -21,8 +21,6 @@
 
 # Resultado final Desktop
 
-<img src="https://i.imgur.com/tEfBUtF.png"/>
-<img src="https://i.imgur.com/oi9xTZn.png"/>
-<img src="https://i.imgur.com/DOGEO5x.png"/>
+<img src="https://i.ibb.co/4TcDHzH/Screenshot-20230731-111725.png"/>
 
 <a target="blank" href="http://pedromakaveli.github.io/Kenai">Veja no seu navegador</a>
