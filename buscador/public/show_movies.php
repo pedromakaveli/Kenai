@@ -2,7 +2,7 @@
     session_start();
     
     function show_movie($movie){
-        $url = "http://www.omdbapi.com/?s={$movie}&apikey=be7603a2";
+        $url = "https://www.omdbapi.com/?s={$movie}&apikey=be7603a2";
         $response = file_get_contents($url);
 
         if($response !== false){
