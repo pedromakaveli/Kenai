@@ -48,7 +48,7 @@
         // Obtém o valor da variável de busca
         $search = $_SESSION['Search'];
 
-        echo show_movie($search);
+        show_movie($search);
 
         // Limpa a variável da sessão para não interferir futuramente
         unset($_SESSION['Search']);
