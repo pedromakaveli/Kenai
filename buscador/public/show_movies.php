@@ -8,6 +8,16 @@
         if($response !== false){
             $data = json_decode($response, true);
 
+            if($data === null) {
+                echo "
+                <div style='padding: 2rem'>
+                    <div style='background: #d63c3e; color: #f9f9f9; font-size: 1rem; border-radius: 15px; padding: 15px 30px'>
+                        <p>Falha ao contatar API :(</p>
+                    </div>
+                </div>";
+                return;
+            }
+
             if(isset($data['Search'])){
                 foreach($data['Search'] as $result){
                     $poster = $result['Poster'];
