@@ -13,7 +13,7 @@
     <title>Kenai</title>
 </head>
 <body>
-        <header class="cabecalho">
+        <header class="cabecalho container">
             <a href="../../principal/">
                 <img src="../principal/img/Kenai-rodape.svg" alt="Kenai">
             </a>
