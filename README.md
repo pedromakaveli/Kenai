@@ -1,4 +1,4 @@
-e<h1>Kenai - Last update(31/07/2023)</h1>
+<h1>Kenai - Last update(31/07/2023)</h1>
 <p><b>Adicionado:</b></p>
 <ul>
   <li>Campo de busca</li>
