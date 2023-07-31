@@ -30,7 +30,7 @@
                     $imdb = $result['imdbID'];
 
                     echo "
-                    <div class='filme'>
+                    <div title='{$title}' class='filme'>
                         <div class='img-poster'>
                             <a href='https://www.imdb.com/title/{$imdb}'>
                                <img class='poster' src='{$poster}'/>
