@@ -34,14 +34,12 @@
 <ol>
   <li>Instalação do XAMPP</li>
   <li>Clonando o repositório na pasta HTDOCS
-      git clone https://github.com/pedromakaveli/Kenai.git
+      <pre>git clone https://github.com/pedromakaveli/Kenai.git</pre>
   </li>
   <li>Iniciando o servidor habilitando o Apache</li>
   <li>
     Acessando a pasta no navegador
-    <pre>
-        localhost/Kenai-main
-    </pre>
+    <pre>localhost/Kenai-main</pre>
   </li>
 </ol>
 
